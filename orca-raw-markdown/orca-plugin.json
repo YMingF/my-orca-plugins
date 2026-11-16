@@ -1,0 +1,29 @@
+{
+  "manifestVersion": 2,
+  "id": "raw-markdown-copy",
+  "name": "Raw Markdown Copy",
+  "version": "0.1.0",
+  "description": "View and edit raw Markdown, and copy the complete current source in one click.",
+  "engines": {
+    "orca": ">=1.4.248"
+  },
+  "execution": "sandboxed-ui",
+  "pluginApi": 1,
+  "contributes": {
+    "customEditors": [
+      {
+        "id": "raw-markdown-copy",
+        "title": "Raw + Copy",
+        "extensions": [
+          ".md",
+          ".markdown",
+          ".mdown",
+          ".mkd",
+          ".mkdn"
+        ],
+        "entry": "editor/main.ts",
+        "frame": "isolated"
+      }
+    ]
+  }
+}
