@@ -31,15 +31,17 @@ const copy = document.createElement('button')
 copy.type = 'button'
 copy.className = 'copy-all'
 copy.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>'
-copy.title = '复制当前文件全部 Markdown 内容，包含尚未保存的编辑'
+copy.title = '复制当前文件全部 Markdown 内容，包含尚未保存的编辑（⌘ ⇧ C）'
 copy.setAttribute('aria-label', copy.title)
+copy.setAttribute('aria-keyshortcuts', 'Meta+Shift+C')
 copy.disabled = true
 const clearAllButton = document.createElement('button')
 clearAllButton.type = 'button'
 clearAllButton.className = 'clear-all'
 clearAllButton.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M5 6l1 14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1l1-14M10 10v7M14 10v7"/></svg>'
-clearAllButton.title = '清空当前文件全部内容，修改后需保存'
+clearAllButton.title = '清空当前文件全部内容，修改后需保存（⌘ ⇧ X）'
 clearAllButton.setAttribute('aria-label', clearAllButton.title)
+clearAllButton.setAttribute('aria-keyshortcuts', 'Meta+Shift+X')
 clearAllButton.disabled = true
 documentActions.append(copy, clearAllButton)
 header.append(title, modes, status, documentActions)
@@ -56,7 +58,7 @@ const body = document.createElement('main')
 const raw = document.createElement('textarea')
 raw.className = 'raw-editor'
 raw.spellcheck = false
-raw.wrap = 'off'
+raw.wrap = 'soft'
 raw.setAttribute('aria-label', 'Markdown 源文')
 const richPane = document.createElement('div')
 richPane.className = 'rich-pane'
@@ -71,11 +73,20 @@ const footer = document.createElement('footer')
 footer.textContent = 'Markdown 编辑 · 未保存的修改也可直接复制'
 document.body.replaceChildren(header, toolbar, tablebar, searchbar, body, footer)
 
+let messageTimeout: number | undefined
 function showError(error: unknown) {
+  window.clearTimeout(messageTimeout)
+  messageTimeout = undefined
   status.dataset.error = ''
   status.textContent = error instanceof Error ? error.message : String(error)
 }
-function message(text = '') { status.removeAttribute('data-error'); status.textContent = text }
+function message(text = '', duration = 0) {
+  window.clearTimeout(messageTimeout)
+  messageTimeout = undefined
+  status.removeAttribute('data-error')
+  status.textContent = text
+  if (duration > 0) messageTimeout = window.setTimeout(() => message(), duration)
+}
 
 // Register before session() so any save request sees the latest rich source.
 let flushCurrent = () => {}
@@ -376,7 +387,7 @@ try {
   richMode.addEventListener('click', () => setMode('rich'))
   raw.addEventListener('input', () => { doc.change(raw.value); message(doc.readOnly ? '只读' : '') })
   copy.addEventListener('click', () => {
-    try { flushCurrent(); copyMarkdown(document, latest()); message('已复制完整 Markdown') }
+    try { flushCurrent(); copyMarkdown(document, latest()); message('已复制完整 Markdown', 2000) }
     catch (error) { showError(error) }
   })
   clearAllButton.addEventListener('click', () => {
@@ -390,7 +401,7 @@ try {
       if (!searchbar.hidden) updateSearch()
       if (mode === 'raw') raw.focus()
       else editor.commands.focus()
-      message('已清空当前文件内容')
+      message('已清空当前文件内容', 2000)
     } catch (error) { showError(error) }
   })
   const replacement = doc.onReplace(value => {
@@ -409,10 +420,22 @@ try {
     finally { replacing = false }
   })
   document.addEventListener('keydown', event => {
+    if (event.metaKey && event.shiftKey && !event.ctrlKey && !event.altKey && !event.isComposing && event.keyCode !== 229) {
+      const target = event.target
+      if (target instanceof HTMLElement && !target.closest('dialog') && (!target.closest('input, textarea, select') || target === raw)) {
+        const action = event.key.toLowerCase() === 'c' ? copy : event.key.toLowerCase() === 'x' ? clearAllButton : null
+        if (action) {
+          event.preventDefault()
+          event.stopPropagation()
+          if (!event.repeat) action.click()
+          return
+        }
+      }
+    }
     if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'f') { event.preventDefault(); event.stopPropagation(); openSearch() }
     if (event.key === 'Escape') { slash.hidden = true; searchbar.hidden = true; search.clear() }
   }, true)
-  window.addEventListener('pagehide', () => { flushCurrent = () => {}; replacement.dispose(); controller.dispose(); doc.dispose() }, { once: true })
+  window.addEventListener('pagehide', () => { window.clearTimeout(messageTimeout); flushCurrent = () => {}; replacement.dispose(); controller.dispose(); doc.dispose() }, { once: true })
   setMode('rich')
   copy.disabled = false
   message(doc.readOnly ? '只读' : '')

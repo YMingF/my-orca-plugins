@@ -14,9 +14,14 @@ in Orca's editor view selector. Inside the plugin:
   emphasis, lists/tasks, quotes, code, links, tables, details, undo/redo,
   an outline and find/replace. Typing `/` opens the block menu.
   Double-click a link to edit its address. Code blocks have language and copy controls.
-- **Raw** edits the actual Markdown. Switching to Rich uses the latest Raw edits.
+- **Raw** edits the actual Markdown. Long lines wrap to the editor width for display,
+  without inserting line breaks into the source. Switching to Rich uses the latest Raw edits.
 - **复制全部 Markdown** copies the whole current source in either mode, including unsaved
-  edits. Copying does not save or modify the document. Read-only documents can be copied.
+  edits. On Mac, press **Command + Shift + C**. Copying does not save or modify the document.
+  Read-only documents can be copied.
+- **清空全部** clears the current document in either mode; save to write the change to disk.
+  On Mac, press **Command + Shift + X**. Read-only documents cannot be cleared.
+  Both shortcuts apply inside this editor, excluding search fields and edit dialogs.
 - Use Orca's normal Save action to save. Unedited mode switches preserve exact source;
   rich edits preserve untouched source formatting through the original reconciliation logic.
   Actual Raw-textarea edits normalize line endings to LF.
