@@ -1,0 +1,440 @@
+[
+  {
+    "time": "2026-11-16T08:11:52.316Z",
+    "file": "orca-rich-markdown-build/PLAN.md",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/PLAN.md\n"
+  },
+  {
+    "time": "2026-11-16T08:12:52.321Z",
+    "file": "orca-rich-markdown-build/package.json",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/package.json\n"
+  },
+  {
+    "time": "2026-11-16T08:13:54.171Z",
+    "file": "orca-rich-markdown-build/package.json",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/package.json\n"
+  },
+  {
+    "time": "2026-11-16T08:15:46.633Z",
+    "file": "orca-rich-markdown-build/package.json",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/package.json\n"
+  },
+  {
+    "time": "2026-11-16T08:15:46.633Z",
+    "file": "orca-raw-markdown-rich-dev/editor/search.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/search.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:15:46.633Z",
+    "file": "orca-raw-markdown-rich-dev/editor/code-view.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/code-view.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:16:09.221Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/upstream/src/renderer/src/components/editor/rich-markdown/details/rich-markdown-details-extension.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/upstream/src/renderer/src/components/editor/rich-markdown/details/rich-markdown-details-extension.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:16:09.221Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/extensions.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/extensions.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:16:09.221Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/index.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/index.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:16:09.221Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/UPSTREAM.md",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/UPSTREAM.md\n"
+  },
+  {
+    "time": "2026-11-16T08:17:27.053Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/extensions.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/extensions.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:18:02.456Z",
+    "file": "orca-raw-markdown-rich-dev/editor/app.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/app.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:18:30.183Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:18:50.481Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/extensions.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/extensions.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:18:50.481Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/index.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/index.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:19:07.485Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:19:46.364Z",
+    "file": "orca-raw-markdown-rich-dev/editor/style.css",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/style.css\n"
+  },
+  {
+    "time": "2026-11-16T08:19:46.364Z",
+    "file": "orca-raw-markdown-rich-dev/editor/index.html",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/index.html\n"
+  },
+  {
+    "time": "2026-11-16T08:19:46.364Z",
+    "file": "orca-rich-markdown-build/build.mjs",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/build.mjs\n"
+  },
+  {
+    "time": "2026-11-16T08:19:46.364Z",
+    "file": "orca-raw-markdown-rich-dev/orca-plugin.json",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/orca-plugin.json\n"
+  },
+  {
+    "time": "2026-11-16T08:20:29.036Z",
+    "file": "orca-rich-markdown-build/tsconfig.json",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/tsconfig.json\n"
+  },
+  {
+    "time": "2026-11-16T08:21:01.776Z",
+    "file": "orca-rich-markdown-build/package.json",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/package.json\n"
+  },
+  {
+    "time": "2026-11-16T08:21:01.776Z",
+    "file": "orca-rich-markdown-build/tsconfig.json",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/tsconfig.json\n"
+  },
+  {
+    "time": "2026-11-16T08:21:01.776Z",
+    "file": "orca-raw-markdown-rich-dev/editor/app.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/app.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:21:07.596Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/index.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/index.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:21:07.596Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:21:23.381Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/upstream/src/renderer/src/components/editor/rich-markdown/lists/rich-markdown-ordered-list.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/upstream/src/renderer/src/components/editor/rich-markdown/lists/rich-markdown-ordered-list.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:21:23.381Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/upstream/src/renderer/src/components/editor/rich-markdown/document/rich-markdown-literal-serialization.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/upstream/src/renderer/src/components/editor/rich-markdown/document/rich-markdown-literal-serialization.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:22:23.385Z",
+    "file": "orca-rich-markdown-build/build.mjs",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/build.mjs\n"
+  },
+  {
+    "time": "2026-11-16T08:23:57.241Z",
+    "file": "orca-rich-markdown-build/build.mjs",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/build.mjs\n"
+  },
+  {
+    "time": "2026-11-16T08:23:57.241Z",
+    "file": "orca-rich-markdown-build/test-host.mjs",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/test-host.mjs\n"
+  },
+  {
+    "time": "2026-11-16T08:24:08.509Z",
+    "file": "orca-raw-markdown-rich-dev/editor/search.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/search.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:24:08.509Z",
+    "file": "orca-raw-markdown-rich-dev/editor/app.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/app.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:24:19.391Z",
+    "file": "orca-rich-markdown-build/build.mjs",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/build.mjs\n"
+  },
+  {
+    "time": "2026-11-16T08:24:30.813Z",
+    "file": "orca-rich-markdown-build/test-host.mjs",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/test-host.mjs\n"
+  },
+  {
+    "time": "2026-11-16T08:24:34.374Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:25:11.875Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/index.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/index.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:25:11.875Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:26:24.908Z",
+    "file": "orca-raw-markdown-rich-dev/editor/style.css",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/style.css\n"
+  },
+  {
+    "time": "2026-11-16T08:26:25.095Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:26:40.594Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:27:04.575Z",
+    "file": "orca-raw-markdown-rich-dev/orca-plugin.json",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/orca-plugin.json\n"
+  },
+  {
+    "time": "2026-11-16T08:27:21.060Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/index.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/index.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:27:21.060Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:27:47.154Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:28:07.010Z",
+    "file": "orca-rich-markdown-build/build.mjs",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/build.mjs\n"
+  },
+  {
+    "time": "2026-11-16T08:28:07.010Z",
+    "file": "orca-raw-markdown-rich-dev/editor/app.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/app.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:29:23.729Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/upstream/src/renderer/src/components/editor/rich-markdown/document/rich-markdown-source-reconcile.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/upstream/src/renderer/src/components/editor/rich-markdown/document/rich-markdown-source-reconcile.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:29:23.729Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/index.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/index.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:30:01.921Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:30:01.921Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/UPSTREAM.md",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/UPSTREAM.md\n"
+  },
+  {
+    "time": "2026-11-16T08:30:20.517Z",
+    "file": "orca-raw-markdown-rich-dev/editor/app.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/app.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:32:00.102Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/tests/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:32:00.102Z",
+    "file": "orca-rich-markdown-build/package.json",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/package.json\n"
+  },
+  {
+    "time": "2026-11-16T08:32:00.102Z",
+    "file": "orca-rich-markdown-build/tsconfig.json",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/tsconfig.json\n"
+  },
+  {
+    "time": "2026-11-16T08:32:00.102Z",
+    "file": "orca-rich-markdown-build/build.mjs",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/build.mjs\n"
+  },
+  {
+    "time": "2026-11-16T08:32:00.102Z",
+    "file": "orca-rich-markdown-build/test.mjs",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/test.mjs\n"
+  },
+  {
+    "time": "2026-11-16T08:33:44.207Z",
+    "file": "orca-raw-markdown-rich-dev/rich-demo.md",
+    "code": 0,
+    "output": "Success. Updated the following files:\nA /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/rich-demo.md\n"
+  },
+  {
+    "time": "2026-11-16T08:33:44.207Z",
+    "file": "orca-raw-markdown-rich-dev/README.md",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/README.md\n"
+  },
+  {
+    "time": "2026-11-16T08:35:45.553Z",
+    "file": "orca-raw-markdown-rich-dev/orca-plugin.json",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/orca-plugin.json\n"
+  },
+  {
+    "time": "2026-11-16T08:36:17.889Z",
+    "file": "orca-raw-markdown-rich-dev/editor/app.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/app.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:36:17.889Z",
+    "file": "orca-raw-markdown-rich-dev/editor/main.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nD /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/main.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:37:19.145Z",
+    "file": "orca-rich-markdown-build/PLAN.md",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/PLAN.md\n"
+  },
+  {
+    "time": "2026-11-16T08:47:36.073Z",
+    "file": "orca-raw-markdown-rich-dev/editor/app.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/app.ts\n"
+  },
+  {
+    "time": "2026-11-16T08:47:36.073Z",
+    "file": "orca-raw-markdown-rich-dev/editor/style.css",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/style.css\n"
+  },
+  {
+    "time": "2026-11-16T09:04:34.938Z",
+    "file": "orca-raw-markdown-rich-dev/editor/app.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/app.ts\n"
+  },
+  {
+    "time": "2026-11-16T09:04:34.938Z",
+    "file": "orca-raw-markdown-rich-dev/editor/rich/extensions.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/rich/extensions.ts\n"
+  },
+  {
+    "time": "2026-11-16T09:04:34.938Z",
+    "file": "orca-raw-markdown-rich-dev/editor/code-view.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/code-view.ts\n"
+  },
+  {
+    "time": "2026-11-16T09:04:34.938Z",
+    "file": "orca-raw-markdown-rich-dev/editor/style.css",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/editor/style.css\n"
+  },
+  {
+    "time": "2026-11-16T09:04:34.938Z",
+    "file": "orca-raw-markdown-rich-dev/README.md",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/README.md\n"
+  },
+  {
+    "time": "2026-11-16T09:04:34.938Z",
+    "file": "orca-raw-markdown-rich-dev/rich-demo.md",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/rich-demo.md\n"
+  },
+  {
+    "time": "2026-11-16T09:09:44.157Z",
+    "file": "orca-rich-markdown-build/tests/core.test.ts",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-rich-markdown-build/tests/core.test.ts\n"
+  },
+  {
+    "time": "2026-11-16T09:12:46.104Z",
+    "file": "orca-raw-markdown-rich-dev/README.md",
+    "code": 0,
+    "output": "Success. Updated the following files:\nM /Users/alex/Orca 插件/源码恢复-20261116/orca-raw-markdown-rich-dev/README.md\n"
+  }
+]

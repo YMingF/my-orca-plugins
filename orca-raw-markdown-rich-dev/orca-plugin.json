@@ -2,8 +2,8 @@
   "manifestVersion": 2,
   "id": "raw-markdown-copy",
   "name": "Raw Markdown Copy",
-  "version": "0.1.0",
-  "description": "View and edit raw Markdown, and copy the complete current source in one click.",
+  "version": "0.2.0",
+  "description": "Edit Markdown in Raw or Rich mode, preserving source formatting and copying the full current Markdown in one click.",
   "engines": {
     "orca": ">=1.4.248"
   },
@@ -21,7 +21,7 @@
           ".mkd",
           ".mkdn"
         ],
-        "entry": "editor/main.ts",
+        "entry": "editor/index.html",
         "frame": "isolated"
       }
     ]

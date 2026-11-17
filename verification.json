@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-11-16T13:50:08.078Z",
+  "javascriptByteIdentical": false,
+  "javascriptHashes": [
+    "fa70cde4ee886f019ac8b3272d6109030aca8d0ab4706e1a909442c8f2c27fb1",
+    "a01fbcd05ba53ab85eb85d7fd84f5b33caf45ff404a7d9e8617f027ceefb187e"
+  ],
+  "cssByteIdentical": true,
+  "coreSyntaxMatchesIgnoringIdentifiers": true,
+  "limitation": "Identifier-normalized syntax comparison and JSDOM checks are not a proof of full semantic or browser equivalence.",
+  "checks": [
+    {
+      "sourceCopy": true,
+      "unsavedRawCopy": true,
+      "rawClear": true,
+      "richClear": true,
+      "modeSwitch": true,
+      "readOnly": true,
+      "titles": [
+        "复制当前文件全部 Markdown 内容，包含尚未保存的编辑",
+        "清空当前文件全部内容，修改后需保存"
+      ]
+    },
+    {
+      "sourceCopy": true,
+      "unsavedRawCopy": true,
+      "rawClear": true,
+      "richClear": true,
+      "modeSwitch": true,
+      "readOnly": true,
+      "titles": [
+        "复制当前文件全部 Markdown 内容，包含尚未保存的编辑",
+        "清空当前文件全部内容，修改后需保存"
+      ]
+    }
+  ]
+}

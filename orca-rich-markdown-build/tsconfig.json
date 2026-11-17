@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "target": "ES2023",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "paths": { "jsdom": ["node_modules/@types/jsdom"], "*": ["node_modules/*"] },
+    "skipLibCheck": true,
+    "types": ["node", "orca", "orca-host", "orca-frame", "orca-worker", "orca-services", "orca-testing"],
+    "typeRoots": ["node_modules/@types", "../orca-raw-markdown-rich-dev/.orca/types"]
+  },
+  "include": ["../orca-raw-markdown-rich-dev/editor/**/*.ts", "tests/**/*.ts"]
+}
