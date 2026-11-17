@@ -1,33 +1,49 @@
-# Orca Raw Markdown 源码恢复
+# Raw Markdown Copy
 
-恢复时间：2026-11-16。2026-11-17 已将 Orca 的 Raw + Copy 编辑器切换到本目录中的 `orca-raw-markdown-rich-dev`，该目录同时用于源码开发与实际运行。原 `/Users/alex/Orca 插件/orca-raw-markdown` 和 `reference-runtime/` 已按用户要求删除。
+一个 Orca 的 Markdown 自定义编辑器，提供原文和富文本两种编辑模式，以及一键复制或清空全文。
 
-## 文件位置
+## 功能
 
-- `orca-raw-markdown-rich-dev/editor/app.ts`：编辑器界面、Raw / Rich 切换、工具栏、复制和清空操作。
-- `orca-raw-markdown-rich-dev/editor/style.css`：界面样式。
-- `orca-raw-markdown-rich-dev/editor/rich/`：富文本核心、Markdown 原文保留逻辑和上游源码。
-- `orca-raw-markdown-rich-dev/editor/code-view.ts`：代码块控件。
-- `orca-raw-markdown-rich-dev/editor/search.ts`：查找和替换。
-- `orca-rich-markdown-build/`：固定版本依赖、构建脚本和测试。
-- `verification.json`：删除旧运行文件之前保存的历史对照验证结果。
-- `recovery-patch-audit.json`：73 个历史文件补丁的重放结果，全部成功。
+- **Raw 原文编辑**：直接编辑 Markdown 源码。长行会随编辑区宽度自动换行显示，不会向原文插入换行符。
+- **富文本编辑**：直接编辑渲染后的内容，支持标题、文本样式、列表、任务列表、引用、代码块、链接、表格、折叠块、目录和查找替换。输入 `/` 可打开块菜单。
+- **复制全部**：复制当前完整 Markdown，包括尚未保存的编辑；只读文件也可以复制。
+- **清空全部**：清空当前文件内容，保存后写入文件；只读文件不能清空。
+- 两种模式均可使用复制和清空按钮，操作成功后的提示会在两秒后消失。
 
-## 恢复依据与限制
+## 使用
 
-1. 从本机开发对话记录提取原始文件创建及修改补丁，按时间顺序重放，未执行记录中的历史 shell 命令。
-2. 初始 scaffold 中的 `copy.ts`、`sync.ts`、同步测试等文件取自 `YMingF/my-orca-plugins` 的已有公开源码。
-3. 富文本上游源码取自 `stablyai/orca` 提交 `73b3f872ed2397bf7a53da343b509eab2b3eed18`，之后应用原有本地修改。
-4. 依赖 lockfile 来自删除前的本机临时快照，并按当时已完成的变更移除 mathematics、KaTeX 和 Mermaid 共 114 个依赖条目。
-5. 最后一次复制/清空按钮改动只存在于压缩后的运行文件中；本次将相同 DOM、事件逻辑及 CSS 同步回 TypeScript。该部分是根据现有产物恢复的可维护实现，不能声称找到了当时未存在的原始 TypeScript。
-6. 修正恢复的构建脚本中原有的许可证生成问题：跳过不含包名的嵌套 package.json，并直接包含 Orca MIT 许可证。
+需要 Orca 1.4.248 或更新版本。在 Orca 中打开 `.md`、`.markdown`、`.mdown`、`.mkd` 或 `.mkdn` 文件，然后在编辑器视图选择器中选择 **Raw + Copy**。
 
-这是一份可以重新构建和继续维护的源码恢复项目；原 Git 历史没有恢复。JavaScript 构建结果与现有产物不是逐字节一致。富文本核心忽略标识符名称后的语法结构一致，CSS 逐字节一致；这些检查和 JSDOM 对照测试不构成全部语义或真实浏览器行为等价的证明。
+| 功能 | Mac 快捷键 |
+| --- | --- |
+| 复制全部 Markdown | `⌘ ⇧ C` |
+| 清空全部内容 | `⌘ ⇧ X` |
 
-## 构建与验证
+快捷键在插件编辑器内生效，查找输入框和编辑弹窗除外。复制不会保存文件；清空和其他编辑需要使用 Orca 的保存操作写入文件。
+
+## 本地加载
+
+在仓库根目录执行：
 
 ```bash
-cd '/Users/alex/Orca 插件/orca-rich-markdown-build'
+orca plugin dev load ./orca-raw-markdown-rich-dev --json
+```
+
+首次加载需要按 Orca 的提示批准插件。开发插件从此目录加载，请保留该目录及其 `editor/dist/` 运行文件。
+
+## 使用范围
+
+- 模式切换时会使用最新编辑内容；没有编辑时切换模式会保留原始内容。Raw 中实际编辑文本时，换行符会统一为 LF。
+- 插件运行在隔离环境中，不能加载文档相对路径或外部 URL 的图片；内嵌 `data:image` 图片可以显示，图片 Markdown 源码会保留。
+- 公式标记作为普通文本处理，Mermaid 代码块作为普通代码块显示，不渲染公式或图表。
+- 未支持的 HTML 和语法可在 Raw 模式中编辑。插件不提供 Orca 的 Agent、review note 或工作区导航集成。
+
+## 开发与验证
+
+插件源码和运行文件位于 `orca-raw-markdown-rich-dev/`，构建工具与测试位于 `orca-rich-markdown-build/`。从仓库根目录执行：
+
+```bash
+cd orca-rich-markdown-build
 npm ci --ignore-scripts
 orca plugin types ../orca-raw-markdown-rich-dev --json
 npm run typecheck
@@ -37,14 +53,4 @@ orca plugin test ../orca-raw-markdown-rich-dev --json
 orca plugin check ../orca-raw-markdown-rich-dev --json
 ```
 
-构建文件生成在 `orca-raw-markdown-rich-dev/editor/dist/`，此处现在就是 Orca 实际加载的运行文件。构建会更新当前注册插件的文件。`.orca/types/` 是由已安装 Orca 生成的类型声明；如需刷新：
-
-```bash
-orca plugin types ../orca-raw-markdown-rich-dev --json
-```
-
-恢复时的验证包括 14 项富文本测试、4 项文档同步测试，以及旧运行版本/恢复版本的复制、未保存内容复制、Raw 清空、Rich 清空、模式切换和只读保护对照。`verify-recovery.mjs` 是当时的历史对照脚本，依赖已删除的旧运行目录，不再属于日常验证命令。
-
-2026-11-17 切换时已通过 Orca 插件静态检查，并在真实 Orca 自定义编辑器中打开 `rich-demo.md`：文档正常渲染、复制/清空图标显示正常、加载无报错。此次未重新执行全部交互测试，未 stage、commit 或 push。
-
-2026-11-17 已移除 `源码恢复-20261116` 中间层级，源码、构建工具及本说明和恢复记录已移至 `/Users/alex/Orca 插件/`。Orca 实际加载路径为 `/Users/alex/Orca 插件/orca-raw-markdown-rich-dev`。
+构建会更新插件目录中的 `editor/dist/`。更多实现说明见 [插件 README](orca-raw-markdown-rich-dev/README.md)，第三方许可证见 [THIRD_PARTY_NOTICES.md](orca-raw-markdown-rich-dev/THIRD_PARTY_NOTICES.md)。
